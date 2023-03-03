@@ -56,7 +56,7 @@ refactor: adjust HTML-formatting according to rule 2.1 in html-and-css.md
 **Максимальный балл за задание +45**
 
 - +2 балла за каждый из 15 пунктов [руководства начального уровня](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css.md), который соблюден ПОЛНОСТЬЮ*.
-- +5 баллов за каждый из 3 пунктов [руководства продвинутого уровня] (https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css-extended.md), который соблюден ПОЛНОСТЬЮ*.
+- +5 баллов за каждый из 3 пунктов [руководства продвинутого уровня](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css-extended.md), который соблюден ПОЛНОСТЬЮ*.
 - Изменения в отступах, незначительно изменяющие внешний вид приложения, связанные с заменой html-тегов в ходе выполнения и исправленные отступы не считаются ошибкой.
 
 (* т.е. правило должно быть соблюдено для всего документа, а не только для кусочка кода).
