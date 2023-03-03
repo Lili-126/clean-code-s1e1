@@ -2,8 +2,8 @@
 
 Перед вами небольшое одностраничное [веб-приложение TODO-list](https://github.com/ViktoryiaYatskova/clean-code-s1e1).
 Ваша задача – отредактировать файлы кода (_рефакторинг_), при этом функциональность приложения должна остаться неизменной. Правки необходимо вносить согласно следующим руководствам:
- [html-and-css](materials/html-and-css.md)
- и [html-and-css-extended](materials/html-and-css-extended.md). 
+ [html-and-css](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css.md)
+ и [html-and-css-extended](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css-extended.md). 
  
 На данном этапе не предполагается использование инструментов по автоматическому форматированию кода.
 
@@ -55,8 +55,8 @@ refactor: adjust HTML-formatting according to rule 2.1 in html-and-css.md
 
 **Максимальный балл за задание +45**
 
-- +2 балла за каждый из 15 пунктов [руководства начального уровня](materials/html-and-css.md), который соблюден ПОЛНОСТЬЮ*.
-- +5 баллов за каждый из 3 пунктов [руководства продвинутого уровня](materials/html-and-css-extended.md), который соблюден ПОЛНОСТЬЮ*.
+- +2 балла за каждый из 15 пунктов [руководства начального уровня]([materials/html-and-css.md](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css.md)), который соблюден ПОЛНОСТЬЮ*.
+- +5 баллов за каждый из 3 пунктов [руководства продвинутого уровня]([materials/html-and-css-extended.md](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/materials/html-and-css-extended.md)), который соблюден ПОЛНОСТЬЮ*.
 - Изменения в отступах, незначительно изменяющие внешний вид приложения, связанные с заменой html-тегов в ходе выполнения и исправленные отступы не считаются ошибкой.
 
 (* т.е. правило должно быть соблюдено для всего документа, а не только для кусочка кода).
