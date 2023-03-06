@@ -146,22 +146,22 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed label {
     text-decoration: line-through;
     color: #888;
 }
 
  /* Edit Task */
- ul li input[type=text] {
+li input[type=text] {
     display: none;
 }
 
-ul li.editMode input[type=text] {
+.edit-mode .task__text {
     display: inline-block;
     width: 224px;
 }
 
-ul li.editMode label {
+.edit-mode label {
     display: none;
 }
 
