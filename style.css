@@ -5,25 +5,40 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.container-header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.container-header__img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.container-header__text {
     font-family: fantasy, cursive;
 }
 
-.centered-main-page-element {
+.container-main {
     display: block;
     width: 500px;
-    margin: 0 auto 0;
+    margin: 0 auto;
+}
+
+.heading {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.add-item__text {
+    display: block;
+    margin: 0 0 20px;
 }
 
 .task {
@@ -32,7 +47,7 @@ body {
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.wrapper {
     display: flex;
 }
 
@@ -65,19 +80,7 @@ button:hover {
     color: #3a3A3a;
 }
 
-/* Heading */
-h3,
-label[for='new-task'] {
-    color: #333;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-input[type="text"] {
+.task__text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -90,17 +93,14 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.task__text:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
-    display: block;
-    margin: 0 0 20px;
-}
 
-input#new-task {
+
+#new-task {
     width: 318px;
 }
 
@@ -119,7 +119,7 @@ li>* {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.task-checkbox {
     margin: 0 10px;
 }
 
@@ -130,8 +130,9 @@ li>label {
     width: 226px;
 }
 
-li>input[type="text"] {
+#item {
     width: 226px;
+    flex-grow: 1;
 }
 
 button.delete img {
@@ -150,8 +151,8 @@ ul#completed-tasks label {
     color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
+ /* Edit Task */
+ ul li input[type=text] {
     display: none;
 }
 
@@ -166,7 +167,7 @@ ul li.editMode label {
 
 @media (max-width:768px) {
 
-    .aaa {
+    .wrapper-header {
         text-align: center;
     }
 }
