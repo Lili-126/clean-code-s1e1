@@ -17,7 +17,7 @@ body {
 }
 
 .container-header__text {
-    font-family: fantasy, cursive;
+    font-family: fantasy cursive;
 }
 
 .container-main {
@@ -105,19 +105,16 @@ button:hover {
 }
 
 /* Task list */
-li {
+.list {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
+    vertical-align: middle;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-li>* {
-    vertical-align: middle;
-}
 
 .task-checkbox {
     margin: 0 10px;
