@@ -2,17 +2,18 @@
 // Tree is from the top, html, body, p etc.
 
 //Problem: User interaction does not provide the correct results.
-//Solution: Add interactivity so the user can manage daily tasks.
-//Break things down into smaller steps and take each step at a time.
+//Решение: добавьте интерактивность, чтобы пользователь мог управлять ежедневными задачами.
+//Разбейте вещи на более мелкие шаги и делайте каждый шаг за раз.
 
 
-// Event handling, user interaction is what starts the code execution.
-//Add a new task.
+// Обработка событий, взаимодействие с пользователем - это то, что запускает выполнение кода.
+//Добавить новую задачу.
 const taskInput = document.getElementById('new-task');//Add a new task.
-const addButton = document.getElementsByTagName('button')[0];//first button
+const addButton = document.getElementById('add-btn');//first button
 const incompleteTaskHolder = document.getElementById('incomplete');//ul of #incompleteTasks
 const completedTasksHolder = document.getElementById('completed');//completed-tasks
 
+addButton.className = 'buttons'
 //New task list item
 const createNewTaskElement = function (taskString) {
 
@@ -40,9 +41,9 @@ const createNewTaskElement = function (taskString) {
     editInput.className = 'task';
 
     editButton.innerText = 'Edit'; //innerText encodes special characters, HTML does not.
-    editButton.className = 'edit';
+    editButton.className = 'buttons edit';
 
-    deleteButton.className = 'delete';
+    deleteButton.className = 'buttons delete';
     deleteButtonImg.src = './remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
