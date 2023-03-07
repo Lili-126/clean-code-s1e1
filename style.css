@@ -5,6 +5,20 @@ body {
     font-family: Lato, sans-serif;
 }
 
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
 .container-header {
     width: 500px;
     margin: 0 auto;
@@ -49,35 +63,6 @@ body {
 
 .wrapper {
     display: flex;
-}
-
-ul {
-    margin: 0;
-    padding: 0px;
-}
-
-li,
-h3 {
-    list-style: none;
-}
-
-input,
-button {
-    outline: none;
-}
-
-.buttons {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
-}
-
-.buttons:hover {
-    color: #3a3A3a;
 }
 
 .task__text {
@@ -127,25 +112,19 @@ button {
     width: 226px;
 }
 
-#item {
-    width: 226px;
-    flex-grow: 1;
-}
-
-.delete__img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
-}
-
-.delete__img:hover {
-    transform: rotateZ(0);
-}
-
 /* Completed */
 #completed label {
     text-decoration: line-through;
     color: #888;
+}
+
+.edit-mode label {
+    display: none;
+}
+
+#item {
+    width: 226px;
+    flex-grow: 1;
 }
 
  /* Edit Task */
@@ -158,8 +137,28 @@ li input[type=text] {
     width: 224px;
 }
 
-.edit-mode label {
-    display: none;
+.buttons {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    color: #3a3A3a;
+}
+
+.delete__img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+
+.delete__img:hover {
+    transform: rotateZ(0);
 }
 
 @media (max-width:768px) {
