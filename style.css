@@ -1,8 +1,21 @@
-/* Basic Style */
 body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
 }
 
 .container-header {
@@ -51,35 +64,6 @@ body {
     display: flex;
 }
 
-ul {
-    margin: 0;
-    padding: 0px;
-}
-
-li,
-h3 {
-    list-style: none;
-}
-
-input,
-button {
-    outline: none;
-}
-
-.buttons {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
-}
-
-.buttons:hover {
-    color: #3a3A3a;
-}
-
 .task__text {
     margin: 0;
     font-size: 18px;
@@ -97,14 +81,10 @@ button {
     color: #333;
 }
 
-/* New Task */
-
-
 #new-task {
     width: 318px;
 }
 
-/* Task list */
 .list {
     overflow: hidden;
     padding: 20px 0;
@@ -114,7 +94,6 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .task-checkbox {
     margin: 0 10px;
@@ -127,9 +106,41 @@ button {
     width: 226px;
 }
 
+#completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.edit-mode label {
+    display: none;
+}
+
 #item {
     width: 226px;
     flex-grow: 1;
+}
+
+li input[type=text] {
+    display: none;
+}
+
+.edit-mode .task__text {
+    display: inline-block;
+    width: 224px;
+}
+
+.buttons {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    color: #3a3A3a;
 }
 
 .delete__img {
@@ -140,26 +151,6 @@ button {
 
 .delete__img:hover {
     transform: rotateZ(0);
-}
-
-/* Completed */
-#completed label {
-    text-decoration: line-through;
-    color: #888;
-}
-
- /* Edit Task */
-li input[type=text] {
-    display: none;
-}
-
-.edit-mode .task__text {
-    display: inline-block;
-    width: 224px;
-}
-
-.edit-mode label {
-    display: none;
 }
 
 @media (max-width:768px) {
