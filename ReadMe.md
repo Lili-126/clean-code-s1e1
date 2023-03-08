@@ -67,4 +67,4 @@ refactor: adjust HTML-formatting according to rule 2.1 in html-and-css.md
 - Инструкция по проведению cross-check: https://docs.rs.school/#/cross-check-flow.
 _______________________________________________________________________________________________________________________________________________________________________
 
-                         ОТРЕДАКТИРОВАННЫЙ КОД НАХОДИТСЯ В ВЕТКЕ gh-pages : https://github.com/Lili-126/clean-code-s1e1/tree/gh-pages
+                     ОТРЕДАКТИРОВАННЫЙ КОД НАХОДИТСЯ В ВЕТКЕ gh-pages  https://github.com/Lili-126/clean-code-s1e1/tree/gh-pages
