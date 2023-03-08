@@ -3,7 +3,7 @@ const addButton = document.getElementById('add-btn');//first button
 const incompleteList = document.getElementById('incomplete');//ul of #incompleteTasks
 const completedList = document.getElementById('completed');//completed-tasks
 
-addButton.className = 'buttons'
+addButton.className = 'buttons';
 
 const createNewTaskElement = (taskString) => {
 
@@ -31,9 +31,9 @@ const createNewTaskElement = (taskString) => {
 
     deleteButton.className = 'buttons delete';
     deleteButtonImg.src = './remove.svg';
-    deleteButtonImg.className = 'delete__img'
+    deleteButtonImg.className = 'delete__img';
+    
     deleteButton.appendChild(deleteButtonImg);
-;
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
     listItem.appendChild(editInput);
@@ -49,7 +49,7 @@ const addTask = () => {
         return;
     };
 
-const listItem = createNewTaskElement(taskInput.value);
+    const listItem = createNewTaskElement(taskInput.value);
     incompleteList.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
     taskInput.value = '';
@@ -127,12 +127,3 @@ for (let i = 0; i < incompleteList.children.length; i++) {
 for (let i = 0; i < completedList.children.length; i++) {
     bindTaskEvents(completedList.children[i], taskIncomplete);
 };
-
-
-
-
-// Issues with usability don't get seen until they are in front of a human tester.
-
-//prevent creation of empty tasks.
-
-//Change edit to save when you are in edit mode.
