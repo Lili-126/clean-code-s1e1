@@ -69,5 +69,7 @@ refactor: adjust HTML-formatting according to rule 2.1 in html-and-css.md
 
 
  ОТРЕДАКТИРОВАННЫЙ КОД НАХОДИТСЯ В ВЕТКЕ gh-pages 
+ 
+ 
  https://github.com/Lili-126/clean-code-s1e1/tree/gh-pages
                     
