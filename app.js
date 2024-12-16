@@ -1,9 +1,6 @@
-const taskInput = document.getElementById('new-task');//Add a new task.
-const addButton = document.getElementById('add-btn');//first button
 const incompleteList = document.getElementById('incomplete');//ul of #incompleteTasks
 const completedList = document.getElementById('completed');//completed-tasks
 
-addButton.className = 'buttons';
 
 const createNewTaskElement = (taskString) => {
 
@@ -33,24 +30,26 @@ const createNewTaskElement = (taskString) => {
     deleteButtonImg.src = './remove.svg';
     deleteButtonImg.className = 'delete__img';
 
-    deleteButton.appendChild(deleteButtonImg);
-    listItem.appendChild(checkBox);
-    listItem.appendChild(label);
-    listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
-    listItem.appendChild(deleteButton);
+    deleteButton.append(deleteButtonImg);
+    listItem.append(checkBox);
+    listItem.append(label);
+    listItem.append(editInput);
+    listItem.append(editButton);
+    listItem.append(deleteButton);
 
     return listItem;
 };
 
 const addTask = () => {
+    const taskInput = document.getElementById('new-task');//Add a new task.
+
     console.log('Add Task...');
     if (!taskInput.value) {
         return;
     };
 
     const listItem = createNewTaskElement(taskInput.value);
-    incompleteList.appendChild(listItem);
+    incompleteList.append(listItem);
     bindTaskEvents(listItem, taskCompleted);
     taskInput.value = '';
 
@@ -80,23 +79,23 @@ const editTask = function () {
 const deleteTask = function () {
     console.log('Delete Task...');
 
-    let listItem = this.parentNode;
-    let ul = listItem.parentNode;
+    const listItem = this.parentNode;
+    const ul = listItem.parentNode;
     ul.removeChild(listItem);
 };
 
 const taskCompleted = function () {
     console.log('Complete Task...');
 
-    let listItem = this.parentNode;
-    completedList.appendChild(listItem);
+    const listItem = this.parentNode;
+    completedList.append(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 };
 
 const taskIncomplete = function () {
     console.log('Incomplete Task...');
-    let listItem = this.parentNode;
-    incompleteList.appendChild(listItem);
+    const listItem = this.parentNode;
+    incompleteList.append(listItem);
     bindTaskEvents(listItem, taskCompleted);
 };
 
@@ -104,6 +103,8 @@ const ajaxRequest = () => {
     console.log('AJAX Request');
 };
 
+const addButton = document.getElementById('add-btn');//first button
+addButton.className = 'buttons';
 addButton.onclick = addTask;
 addButton.addEventListener('click', addTask);
 addButton.addEventListener('click', ajaxRequest);
