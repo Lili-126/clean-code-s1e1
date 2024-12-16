@@ -7,13 +7,13 @@ addButton.className = 'buttons';
 
 const createNewTaskElement = (taskString) => {
 
-    let listItem = document.createElement('li');
-    let checkBox = document.createElement('input');//checkbx
-    let label = document.createElement('label');//label
-    let editInput = document.createElement('input');//text
-    let editButton = document.createElement('button');//edit button
-    let deleteButton = document.createElement('button');//delete button
-    let deleteButtonImg = document.createElement('img');//delete button image
+    const listItem = document.createElement('li');
+    const checkBox = document.createElement('input');//checkbx
+    const label = document.createElement('label');//label
+    const editInput = document.createElement('input');//text
+    const editButton = document.createElement('button');//edit button
+    const deleteButton = document.createElement('button');//delete button
+    const deleteButtonImg = document.createElement('img');//delete button image
 
     listItem.className = 'list';
 
@@ -32,7 +32,7 @@ const createNewTaskElement = (taskString) => {
     deleteButton.className = 'buttons delete';
     deleteButtonImg.src = './remove.svg';
     deleteButtonImg.className = 'delete__img';
-    
+
     deleteButton.appendChild(deleteButtonImg);
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -60,11 +60,11 @@ const editTask = function () {
     console.log('Edit Task...');
     console.log('Change "edit" to "save"');
 
-    let listItem = this.parentNode;
-    let editInput = listItem.querySelector('input[type=text]');
-    let label = listItem.querySelector('.list-item');
-    let editBtn = listItem.querySelector('.edit');
-    let containsClass = listItem.classList.contains('edit-mode');
+    const listItem = this.parentNode;
+    const editInput = listItem.querySelector('input[type=text]');
+    const label = listItem.querySelector('.list-item');
+    const editBtn = listItem.querySelector('.edit');
+    const containsClass = listItem.classList.contains('edit-mode');
 
     if (containsClass) {
         label.innerText = editInput.value;
@@ -111,9 +111,9 @@ addButton.addEventListener('click', ajaxRequest);
 const bindTaskEvents = (taskListItem, checkBoxEventHandler) => {
     console.log('bind list item events');
 
-    let checkBox = taskListItem.querySelector('input[type=checkbox]');
-    let editButton = taskListItem.querySelector('button.edit');
-    let deleteButton = taskListItem.querySelector('button.delete');
+    const checkBox = taskListItem.querySelector('input[type=checkbox]');
+    const editButton = taskListItem.querySelector('button.edit');
+    const deleteButton = taskListItem.querySelector('button.delete');
 
     editButton.onclick = editTask;
     deleteButton.onclick = deleteTask;
